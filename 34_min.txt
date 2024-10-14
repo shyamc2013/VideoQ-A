@@ -1,0 +1,250 @@
+
+we we sort of call the code right moment internally That's Mike noop co-founder and head of AI at zapier he sled the product team that helps over 10 million people automate workflows between 5 000 of your favorite applications many consider zapier to be the backbone of modern Automation in early 2022 Mike
+
+gave up his exact title to go all in on AI and zapier not just for product's sake but to figure out how to enable zapier's internal employees with AI I wanted to talk with Mike because he thinks about how to enable his employees with AI in ways that other Business Leaders don't gotten from the whole work
+
+and just said yeah we're gonna give everybody one week to go like step out of your day job and figure out how to use language models for yourself in this episode we talk about zapier's top internal use cases for AI that actually increase Revenue Mike's recommendations for how other businesses should get
+
+started with internal Ai and his predictions on the future skill sets of knowledge workers and where zapier will be making headcount Investments to meet the a wave so Mike as I was researching for the interview one thing that stood out to me was how you've embraced different roles at zapier it seems like you filled in different
+
+gaps depending on what the business needed and last July you and your co-founder Brian both gave up your exact title and went all in on zapier at or AI at zapier what what does that mean what's that transition been like well uh probably I mean a personal story there plus the like the AI story I think
+
+there's two two different ones um you know on the personal side I think I've actually met quite a few um uh sort of third co-founders which is quite uh sort of got into zapper you know from the very early days it was always very clear from the very beginning that I think Wade was going to be CEO Brian was going to be CTO and so
+
+what does a third co-founder do exactly I was technical I had an engineering background I dropped out of engineering school to to start zapier um but it was always clear Brian was like a stronger engineer out of the gate than I was and so that sort of in the early days left over like well whatever they aren't focused on is what I'm gonna
+
+do and I tried to hold that kind of mindset throughout the entire history of Napier so you know the beginning of zapper is doing a lot of front-end building a lot of product design that turned into ux research data analysis that turned it into a product management job and all along the way was never like
+
+the best of any of those individual jobs and would try to hire people my my job became basically like prove out the role it's happier figure out what it should do and then go hire somebody better than you can basically fire myself from the role so I joke that I've like fired myself from jobs that's after like four
+
+or five times now and the biggest one was says uh that I was the president of our products organization so I had all of our engineering your products reporting up to me for a few fears um uh mostly to try and sort of uh turn us around to introducing new products uh the new tables product or interfaces
+
+product or transfer product were sort of things that um were brought to Market uh that I I set out to try and get into market and um more recently and then a year ago uh I read the Chain of Thought papers actually more than a year ago it came out last January and I'd been paying attention to language models for for a
+
+while since gpt2 and three era I did a whole internal presentation in fact on gpd3 when it came out I thought it was so cool um but it didn't like find an immediate use case you know it was a novelty um like I think many people saw gpt3 as with the with the sort of online demos and playground and then I read the Chain of Thought
+
+paper last January which showed that there was this like reasoning overhang capability in the models that no one like really fully understood and had been there since like gpd3 came out um and that to me fell so one interesting of a problem and two like sort of exciting slash like existential for zapier like man Ai and automation
+
+are sort of mode collapsing into the same thing and like we needed to know what they could do and so that was the um kind of moment when last summer I was like all right I I know I got to go all in on AI at this point and just the reality of being an exact running you know uh you know several hundred percent
+
+organization is you just don't have as much time as you think you want to be able to go Hands-On so that's what led to ultimately me giving up that role and saying actually this is the right thing for zapier there's no one else in the organization today that sees what I see I think and is willing to go do what I'm
+
+about to do so I sort of give up the role went all in um and Brandon Brian did Brian was a little bit of a my CTO and profound was a little bit better if it wasn't to do it given he didn't have any direct reports already so he could kind of spend his time aimed at whatever he wanted to though he did like give up a
+
+lot of his exacting Focus as well and for about six months we just iterated through the idea space of like what was possible what types of products were possible to build with language models what were the capabilities and limits of them uh one of the first things I think you know anyone who was building with them back
+
+last summer fall realized was like well they're frozen in time right they're these model weights they're not online they don't have the ability to use tools and that was something that zapper could essentially offer is like well we've got a we've got a toolkit with uh 50 000 actions in our platform of all of our
+
+apps that we integrate with um what it could be like expose those to language models so we worked the idea space ultimately led to us launching uh the GP plug-in back in March as one of the 13 launch Partners there and uh since then the main thing that I got asked all about was like you know I I'd show up to these like AI events and uh
+
+you know trying to promote and show off the new capabilities we're going to zapier and everyone just asked like me what you know help me cut through the hype there was such this huge hype cycle beginning end of q1 beginning of Q2 and folks just I think recently wanted to know you know Business Leaders
+
+non-technical folks even Engineers like what use cases are you seeing that are actually work what's not working what are your customers actually using them for should I even pay attention to this at this point you know is this another sort of like uh crypto wave style thing where I can just like ignore it and
+
+it'll eventually go away what's real did you call like a hand raise and say who wants to come join me on this journey or was it very individual at the beginning of it it was very individuals just Brian and I we we did have one or two other people that um actually in uh a uh somebody left Sanford to go find a company we pulled
+
+back in and one other person I think internally who was like really interested in just working on AI llfs but that was it I think it remember this was like pre-che PT so like most people were like hey yeah what do you have it is a weird thing Mike like why are you like doing this are you sure this is
+
+like what we should be spending our time what you should be spending your time on like uh I don't think in this sort of broad there was a general broad awareness uh that like this stuff was going to be as important as it was so um after chat I think it started being like okay I get it like this does seem
+
+important we should figure this out but uh for the first like month or two I think it was sort of an odd odd thing for a few folks well so let's dig into that because that seems interesting so you go into the AI space quote before it was cool and then all of a sudden chat GPT comes out how does your mind shift change have you
+
+thought about new things or is How does the energy switch we we had actually built a prototype of like Chachi PT internally so we actually like it's sort of interesting um we worked through like we built a version of chat gpd4 it existed we built a version of like the uh tree of thought the graph of thought stuff now before
+
+that sort of uh was a thing we built the tool former paper that came out like we had a version of that working internally and it sort of led to the plug-in um so I think I was actually pretty happy that we'd moved through the broad idea space very quickly and I think landed on at least the product shape
+
+that felt like the best fit initially for us um you know I don't think we launched that like version of our own chat repeat if it would have had anywhere near as much sort of impact as what chat was able to have um but like so I I felt good at least that we had we had built a version of it and we found the limits of it and we
+
+found what it was good at and then focused on the spot that we felt like we could add a lot of differentiated unique value stores in this like emerging ecosystem um so I I remember like being personally surprised by how much like broad awareness the industry brought to it like I guess like I I thought it was
+
+like very interesting it was going to be a big deal I didn't realize it was going to be like a big deal so quickly so like I don't think you can like sit here and I I certainly couldn't say oh I had perfect awareness that was coming but um yeah I think there was some Zeitgeist stuff that got caught caught up in that
+
+too but but broadly yeah I think I I got surprised in that Dimension but overall I did I did think that the likes broad space was going to be pretty important came in what I was seeing from language models to date how pervasive is the AI talk at the leadership level so when you're having your exec meetings is it
+
+just taking over all the conversation or is it still kind of business as usual I've heard two stories here um internally it's like taking over everything um you know as it should I think for an automation business like I mentioned when I go talk to our customers the happier's in this like kind of category of automation workflow
+
+Automation and when I talk to the folks who are using language models and thinking about AI they think about what it does for them in sort of the same way they think about what's after can do them which is hey it's software that like does magical things for me basically those are those are the folks
+
+that sort of get the most um out of exactly right as these folks that sort go to zero to one with it it's an enablement technology not a time saving technology and sure automation absolutely is a use for time saving however like for the folks that like love us the most it's usually folks that otherwise don't have great Alternatives
+
+it's like hey I don't know how to code I'm not an engineer I don't have budget to go hire an engineer and I wouldn't have been able to do it otherwise I found zapier discovered it and it allowed me to go on this journey where I was able to accomplish the thing for my business the thing for my team the thing
+
+for myself that otherwise I felt was like Out Of Reach and I think that's the promise of a lot of these language model systems and AI systems is sort of offers the ability for a for folks to do things that they otherwise wouldn't have been able to to get leverage if they would otherwise feel like it would have been
+
+sort of Beyond them um so in that sense that's why I say like I I sort of sense this like broad topic of AI and automation resource mode collapsing into the same thing and frankly I was winning like that is the thing I hear most business users want to talk to me about and are interested in is how is that working so I think it's I
+
+think it's like on an escape ramp and I think it's that's going to continue I don't see that reversing um so for us it's very existential you know it's either we're going to figure this thing out and we're gonna like you know 1000x our business or we're not and other folks are going to catch up and they're going to surpass us so it felt
+
+very existential and both in a good and a bad way um but obviously I would like it to be in a good way so we're going to spend a lot of time on our Focus there as I spend time with other companies though outside zapier I definitely feel it more uneven in terms of like how much exact attention is on it I've served in
+
+a lot of companies and you know one of the first things I ask exactly like exacts when I meet them is like do you have a sense of what adoption is like inside your organization and for the most part you know the the comp the most comments right here is like well I hear a lot of interest and I know there's
+
+some usage but I bet it's like five percent maybe and I have no way to measure I have no sense really like I have no definitive way to tell you how many people individuals in my company are getting benefited by language models or this like emergence and explosion of these new AI features and tools um and I think the reality is for a lot
+
+of companies still it's not existential right it is something that can like um accelerate them something that can help them go faster close more Revenue drive down costs but those are sort of um like meeting departmental goals right it's like in service of something that organization wants to do and I think
+
+that's true for most companies like the ai's going to get deployed in service of some other goal it's not going to be the end of it's not going to be the means itself um whereas for us it touches on both like the means but also the ants uh for our customers I've talked to a bunch of companies as well who are starting AI
+
+committees or AI red teams kind of internal groups who are figuring out how to do in internal enablement to their employees does zapier have something like this and how did you all think about that we do actually I can share a so this summer I've been doing a lot of internal like research in the organization myself
+
+just to understand like how much adoption is there how are we using Ai and LMS internally um this is one chart I can talk over so this is a graph of uh basically AI adoption at the individual level so this is um about the y-axis here is the count of employees YX the x-axis is the date over the last 12 months and around March uh
+
+late March is when we internally and this was sort of after gp4 came out after our plug-in got launched we we sort of call the code red moment internally where we said look this stuff like we'd gone through the explosion phase for six months we realized what was possible like we'd proven it to ourselves with the products we were
+
+bringing into market and so we went to the rest of the organization and said you know this is going to be important for us not only is it important at an individual individual level but we're going to need to figure out so that like we can help our customers navigate this as well help them figure out what to use
+
+automation for our Ai and automation for so we did this code right about it where Wade uh my co-founder you know CEO gotten from the whole organ just said yeah we're gonna give everybody one week to go like step out of your day job and figure out how to use language models for yourself and now that kicked off a
+
+bunch of work uh an enablement team on legal on T to figure out like okay which tools can we you know unlock for folks which versions of the tools should we give folks what are they what's the guidelines for where you know we can bring in customer data and where we can't so there was a good Sprint for a
+
+week or you know maybe two three weeks we're figuring all that out ultimately accumulated in this one week sort of hackathon that we did uh in the middle of April which you can see in this chart in terms of the impact it's almost like an overnight huge step function increase in the amount of use cases we're
+
+adopting and what you're seeing here is uh this is a measure of zaps so actually use cases of zapier itself using a language model step somewhere in it or an AI app but generally the most popular one is like an open AI completion step or an embedding lookup stuff so some something that's like you know
+
+Transformer based or language model enabled um so I like I have very high confidence in the data because it's literally like measuring the usage of zapier we have another maybe 10 or 15 percentage points too that are using things like you know chatgpt chat you prefer Enterprise that just got launched and announced other
+
+first party AI tools we have a chatbot Builder which uses l1's under the hood so there's another few percentage points of folks that are purely in this graph but this is the cleanest like one to look at I think that showcases you know are sort of compressed adoption timeline uh internally of using lens and from
+
+this then you can start talking about like okay well what are people what you know what's driving the use cases there and we have we found I found use cases across whichever Department product sales marketing CS um like you name it and we can talk about each one each department individually but I'd say like
+
+if I was giving like any guidance for companies maybe two points of like advice for anyone who's just starting to think about how to use these what is this what you should do is think about like all of the hard problems your organization has encountered that you haven't been able to solve yet maybe like once you've tried to solve but
+
+we're in track time for whatever reason why is it too expensive Tire contractors couldn't get your couldn't get like an engineering grip on the problem itself I recommend at least revisiting every single one of those problems now with language models in hand and just see can we get a new like handle on that problem
+
+as a result of having language models in our case we've found quite a few cases where we've been able to find pretty significant Roi through that like mindset basically just take our hardest problems we never solved and go back and an example of one of those is uh error messaging so like error messages on
+
+zapier we've known that they're a prompt from the very beginning right error messages are written by uh like developers uh these are like error messages third-party Partners right like their developers are building their apis and they expose you know some error messages they never thought would see a
+
+light of day to a non-technical business user and yet here it is like you've sent in an email directly to you know like the head of support Ops and they're like wait what the heck is this like our you know cryptic error message how do I solve this um that that that is a very very wide perplexity problem with uh on zapier
+
+given just like how much variability and how many different errors emerge from all the different systems we connect with we've known that's a problem since 20 literally 13. and we tried in the early days to get a handle on using heuristics categorization uh even manually we even built like a system that just could
+
+manually tag or a message when they came through support and we'd look for similar ones and show those and it just like never got good enough the the sort of complexity group the problem complexity grew faster than we could get like our hands around the problem so we sort of gave up on it frankly for I
+
+don't know eight years and that is a problem we've Revisited with language models what because one of the things we're really good at is dealing with like hyperplexity problems unstructured problem space Tech space which is like what exactly whatever error messages and now we can do a much better job of doing
+
+similarity difference you know and cosine similarity to look for messages tag them categorize them we're even doing like experiments to generate resolution steps so like to even just say hey given this error message just why don't you like suggest the user like what's one two three that they should do
+
+to fix it and that's starting to work so that's an example of a problem where like you you should go back to them just retest your assumption that that's an unsolvable problem uh that's that's my first advice and then the second one is I think like the head the fat head of our long tail of use cases for elements
+
+internally is around like feature extraction over raw text usually customer data so think like you know you've got sales calls where you're getting transcripts uh you know maybe 10 20 transcripts a day with thousands of you know words a piece you've got you know maybe a couple hundred issue tickets uh on zendes coming in every
+
+single day that's on structured data you know maybe your product teams are running future surveys where they they're sending out type forms or Google forms and collecting raw feedback from customers or maybe you have an inbound like help support task where you get product feedback that's like getting
+
+triaged in all of those places are like high volume unstructured data where it's very hard to get extract out a sense of like Trends patterns themes issues and that's something language I was really really good at so we point like language models and all those unstructured sources and look for look for patterns
+
+now pull out summary pull out features of them like an example for in the sport case would be hey let's generate a report of like what are the top new support issues that we're seeing over the last 48 hours put a velocity score against it and then figure out okay and then use another language model to do uh make an assessment of which
+
+product team owns that issue based on the parts of the code base they have and it's just using internet it's just using uh embedding similarity stuff to do it and it's like pretty good so we built this like Auto triager which like we get this nice score of tickets we're outside automatically to the right team in slack
+
+and now they get this like Daily report of like when a new issue is trending that like they can fix and resolve um so like those are generally the types of that's like probably the head of the fat tail of the types of use cases I see internally as it's like you know you applying language models to reason over
+
+large amounts which teams are actually building these different tools and so your sales tools your it tools Etc will it be a common kind of Dead theme that does internal tools or does each individual lead take down that responsibility you know it this point when I was looking at our best use cases it tends to be individual
+
+people we don't have like one team going around the organization like trying to help folks do enablement on a team by team basis we are actually considering doing that um we tried to take a more like democratized approach given that everyone at zapier in theory should be the best user so zapier we wanted them
+
+to at least you know let's see if we can get a broad start on the problem by just like asking everybody to take some individual responsibility to go figure out how to use it um and that's that's paid off so like if I look down our top list I was actually just looking at some of the profiles of folks um so we've got like you know
+
+Chris our partner operations Specialist or Reed who's one of our AI product managers or Diane who's one of our Ops Specialists and PMs like those are 10 those tend to be the folks that have like figured out how to build these things that you know they tend to be in those operational roles where they're
+
+looking across a some sort of workflow that's matters to a department or have some good sense of like what the departmental goals are that they can deploy elements against and you had brought up enabling customers kind of like doing Common Sense training with the do's and don'ts of llms and what they're good at and what they're not
+
+good at it sounds like y'all don't have that right now but you see it as something that you may want to do in the future like a list of what's good and bad well kind of you know one way is to say oh let's democratize the approach and let's have our employees figure out what to do with language models I know there
+
+are ways to say hey we're going to do some formal training and say this is what they're good at this is what they aren't good at to try to square up more ideas for them we uh we are starting to do that um we've got a series on our blog that we just started where we're starting to pull out our own internal
+
+use cases and showcase this showcase them and talk about them so you know the one I was talking about internally with like support was gonna get like a big Spotlight and a feature mention um I mean if I just like riff I think the you know summarization is something they're really really good at generally you if I'm kind of like
+
+talking with customer potential customer think about how I use LMS you know you generally want to deploy at least prototype in a way where you're going to have a human Lube somewhere no generally the technology like reliability is one of the big problems hallucination reliabilities are the two big issues you're going to encounter and
+
+it's best to start on use cases that allow humans to still sort of be in the loop yeah absolutely and earlier we talked about you found workflows that give you the ROI that you're looking for what is that return is it more efficiency is it less time on task or how do you measure that I think it varies by department and like what the
+
+use cases like the zap template one you know would be I would look at it through the lens of like labor enhancement right we're able to 100 literally 100x the rate of high quality landing pages that we're able to publish um so so that's like a cost saving that's a labor enhancement we're getting more leverage out of the you know
+
+employees and the money that we put into that sort of system today for other ones in our sales organization where we've got a couple use cases where we're doing similar sales call transcriptions to automatically doing uh summarization and future traction or sales calls in the HubSpot so there's like you have like really high quality
+
+data synchronization between sales conversations and HubSpot so there's like zero record admin overhead you have to do we're probably booking somewhere around you know 100 extra 100K they are a month as a result of that so that's like literally like top line revenue that we're booking yeah because we have
+
+better insight into all of the deals so in our when our sales managers are going in to look at our you know when they're prospecting essentially against our sales funding to figure out okay today who am I going to spend time with you know they want to spend time with the leads that are most likely to close uh
+
+they want you know those are the people that we want to get across the finish line so these types of tools are like really really helpful to like increase awareness and attention on the deals that are most likely and that translates into sort of Revenue um so you can actually do that um I you know I think there's uh we're
+
+starting to adopt an RCs orgas well around doing issue in ticket summarization drafting replies we have an internal chatbot with q a it's like grounded on our product knowledge base that our CS agents use to do their own q a against that bot in order to get higher plot answers you know this is things that lead to decreased ticket
+
+time increased quality of the response too so it actually takes less reps like less replies to get the like customer to a happy outcome so that's like customer satisfaction csat uh like support costs as well um so I really it's varied across the entire board here from you know Top Line to bottom line yeah that's very cool and
+
+as you're saying those use cases you'll just make me think that the blog when you share them all will be invaluable to folks because that is tangible good Roi that they can Implement within their orgs and I'm sure it'll be a good acquisition funnel for zapier too because I'm assuming you probably need
+
+zapier to do a lot of these workflows one of those I've talked about yes I mean I think it's really about just like uh more broadly though if you just step back I have heard folks this aspect what's is it hype or is it like something I can ignore and I feel having spent the summer looking at actual useful use cases internally I can say
+
+pretty confidently that there is something very real here and I don't even think we've hit the limits of like I think we should be going further actually even though I found some good use cases like I think we're maybe I don't know a fifth of like how much we could be using it for internally um that's why I've mentioned before like
+
+we are considering spinning up action enablement team to go even further internally but um yeah there's something around here well I was going to say so what does going further look like you mentioned the enablement team what else is there I think the reality is that it is still it's too hard still and I'll reflect this on zapier as a
+
+product but I think broadly it's true too it it's still too hard to discover actually useful use cases and then get them set up and working um chat GPT like when I when I survey like uh business users around AI the there's very very broader word this is actually backed up about some Market size too there's very broad awareness of
+
+what like Ai and chatbt are amongst knowledge workers actual usage and adoption is very very low you're talking like one to two percentage points so there's this huge like gap between awareness and adoption right now with the technology and you kind of dig into that and it's often well I haven't really played with it much I I didn't
+
+know what to exactly use it for so maybe I did kind of type in a couple messages but I didn't like you know get hooked on any use case that I could like build into my internal workflow so like yeah I tried it once but I've gone back to it tried it again um or I actually did have a use case but the technology failed for me in some way
+
+right like you know Church BT was able to do the generation part but I really needed to do some likes and that my use case required this like classification thing and to be piped into an ongoing workflow rather than me having to go to this like synchronous you know chat experience in order to get the value out
+
+of it so like the product didn't quite fit the use case that they had in mind um so I think probably I think there's High awareness but low an actual adoption and that's true even in zapper um I showed that curve earlier that the zap curve it's capped out it's an S curve it like it's leveling out at
+
+a third of the company adopting all language models in internal workflow animation and I would like to see that above 50 above 75 percent how do we how do we get there that's where I realize that's why I think like I think zapier is still too hard for a lot of folks like zapier itself is a you know I I think we've
+
+made strides on making like programming which is effectively what zapper does under the hood easier over the last 10 years but I still think it's too hard for most non-technical lineup business-wise um we aborted we have more work to do there to make it like easy enough to be adopted by you know wall-to-wall inside
+
+of an organization and this is where I think language models actually offer a chance to do that I I've not seen a technology come out that I thought could go back and solve that problem we talk about like problems that have been around since the beginning that is a problem here it's always been a little
+
+hard like and relative to the Alternatives it's easy like coding or you know product but but compared to just like not doing anything it's actually pretty challenging there's a big activation energy there's a big learning curve you have to go through to learn how to build with with zapier and I think language models offer an escape
+
+patch on that escort where hey we actually could use natural language to help users both just cover what they should use language models to automate as well as build it set it up where they don't have to be able to they don't have to be this like can you know somebody's thinking about all the details and ways
+
+that it can fail they just have to have a really good problem in mind and the technology can meet them where they're at to help them like go for a problem it's actually something working yeah that makes sense because in order to set up an automation you're right there are a lot of details you need to
+
+figure out and traditionally a human needs to define those details but if you can have a language model helping you fill in some of those blanks based off of your objective of your goal you could take some of those away and vastly simplify the process that's though we're building that right now we've just
+
+deployed a like a zap guesser on our onboarding process is kind of the first thing of many that we're hoping to release along this kind of Direction where you know being able to have a natural language based discussion with a user to do the end-to-end like life life cycle management workflow yeah yeah that's very cool and I know
+
+zapier has a philosophy of don't hire till it hurts do you see any of that any early signals on that with regards to Ai and where you may need to hire to help I was a philosophy actually that we held in early days of zapier we did break we like moved away from a little bit in the scaling phases happier
+
+the the thing that we learned about it was there are it might be a decent like philosophy still but you start to learn and be able to predict your pain maybe it's a better way to think about it you know like oh shoot uh I better start like hiring in this area otherwise I'm gonna be buying the eight ball like
+
+an example of this that I remember was uh when we launched multi-steps apps in 2016 we have that velocity in place and so we didn't ramp our like support investment ahead of time and overnight the complexity of the product skyrocketed right we went from two steps to any number of arbitrary steps you
+
+want and just the amount of edge cases that introduced it like I mean it was like three or four accidental support tickets we started getting because the product was buggy and new and we had to fix that and like we hadn't trained our team on how to and it was just like oh yeah but that was probably in a place we
+
+could we should be able to predict our pain I don't think ahead of things so I I'll make that one like yeah sure but like maybe like your question was kind of getting more at the score of like are there areas where we're starting to like think oh we could go further if we hired folks in specifically in AI is that kind
+
+of the thrust of the question that's exactly it so instead of just making the effort investment or maybe a monetary investment well now we're starting to think about these headcount investments in these certain areas most works I've talked to bring language models in through their engineering work machine pattern thick engineering
+
+product organizations generally are just like the first ones to pick up the tech because it's it it's more accessible to them right there's new Concepts they have to learn there's a good Rich apis that you can just adopt off the shelf so they start prototyping and playing with it and then that knowledge starts like
+
+kind of spreading out in the organization to some of the you know design leaders to the marketing leaders into the sales and support org and that's how I've seen it sort of seen it like kind of perforate and at this point we're starting all right I should say I I sort of see the trend where um I've sort of think about this like
+
+kind of new category of engineer like AI engineer as a type of person we actually are like looking to hire would like to hire more of I heard a few folks this Summer that um have been spending the last you know six eight months just entirely engrossed in language model technology and understanding how to
+
+apply the technology what techniques work which don't um almost as like a sort of third kind of like stool on the you know back-end engineer front-end engineer AI engineer because it really isn't a completely different skill set so I'd say that's like one big thing we've been hiring for that's like AI specific
+
+but I don't know I think my long-term take is that like for not for sort of non-technical employees for knowledge workers in 10 years is just going to be an assumed skill set like you know how to use language model based tools and maybe it's not a job requirement but all of the like the senior people in all of
+
+their fields are going to know how to use these tools um you know it's probably like not just somewhere from the office suite right Excel yeah document processor yeah you could be a knowledge worker with not really be proficient in those things but like the folks that are going to get ahead and I sort of think that at the in
+
+the base case that's what we see happen with language models so that's one of the reasons we offered the whole company a week off their day job to go figure out how to use the tech because we knew like look in 10 years you know this is going to be really important for your job no matter who you are so here's like
+
+one week right now at the very beginning to get on the ground floor and go figure it out for yourself and you know take the take the individual initiative to go figure it out because it is going to be an important part of every future job that zapper and Beyond yeah no that's beautiful and Mike I just want to wrap
+
+it up with one last kind of fun question here um so there's a ton of AI news out there right there's stuff all over Twitter stuff all over the headlines what's the news that gets you excited what are you looking forward to seeing when it's coming out model architecture Innovation is uh when I'm like not spending time on
+
+useful AI use cases that's the like those are the papers I'm reading and like most interested in uh you know there's a side question of what can you predict about language models and AI at this point yeah and I think the things you can have a pretty strong degree of conviction around today are that latency is going to go down for token
+
+generation for LMS cost is going to go down as a result of that that's going to unlock some new use cases that language models can do right now they're just expensive and slow such as these like you know deep chains of thought style use cases you'll be able to package those up more and more into synchronous product
+
+experiences where today they kind of have to run offline or you have to make you know product ux trade-offs the thing that I would not feel comfortable like putting a date on or a smooth trend line around is capability enhanced that is something that comes more in stop function chunks than it does along
+
+like Smooth curves I think over a long enough Arc you know if you zoom out on a you know step function graph it's going to look like a smooth curve but when you zoom in on a year year by year basis who knows exactly when we'll see that next sort of hit and that's going to be down that like sort of capability step
+
+function is going to be Downstream of new model architecture is what I believe and sure that's why that's what I'm excited about is seeing those types of papers get published and pushing on that I think it's kind of not in Vogue right now given everyone's like really just trying to figure out how do we like
+
+extract as much value as we can out of the sort of um architecture you did find with Transformers but personally that's what I get excited [Music] thank you

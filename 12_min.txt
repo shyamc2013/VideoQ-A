@@ -1,0 +1,92 @@
+
+there's a lot of data out there representing dialogue between two or more people this is usually an interview podcast meeting or a sales call it's super helpful to be able to extract insights from these transcripts today we're going to look at Best Practices I've learned while building thimble a B2B sales call analyzer if you want to
+
+see more information about thimble I suggest heading over to the Twitter launch or thimbleai.com to see the demo video link is in the description alright the plug is done let's jump into some code alright throughout building thimble I've learned that there's four key points that I recommend the first one
+
+starts with clean data like any good project you need to make sure your data is well formatted so that your language model can take advantage of it the first point that I want to mention here is the name or the role if you conclude the name of the person speaking in your transcript or the company that they're
+
+with or the role or whatever it may be it goes a long way the second piece is going to be around the system instructions rarely will the out of the box prompt that you get with your summarization tool be the one that you actually want to use it's pretty important to be very specific with your language model about which role you you
+
+want it to take you only want to pull for information from the call meaning you want to tell the language model hey don't make anything up I don't want you to go crazy here just tell us that you don't know and then finally the last piece that I found out which is pretty useful is you don't really want to make
+
+users prompt anything I know that chat Bots are all the rage right now but I want to make my users not need to think about what they need to type in or I don't want them to have to do prompt engineering so I try to abstract as much as that away for them and replace it with radio buttons or sliders or
+
+whatever it may be the next thing we're going to do is import our packages there's nothing too crazy you haven't seen here before the only thing that might be jarring is I'm going to make this display just a little bit longer or wider so that we can see more attacks at the same time and the next piece of this
+
+too is these chat prompt templates it kind of may look like a lot right here but that's because we're using a chat model and there's different chat prompt template models for each different type of message that we send out over there okay so next thing we're going to do is we're going to load up our data and this
+
+is data that you can go check out this transcript is available to you it's underneath the data folder under transcripts and if we take a look at what this content actually looks like it is a simple transcript of a dummy sales call that I had and so here we see that Greg I'm including my company my fictitious company it's called Marin
+
+transitions partner this is the beginning of the call I'm talking to a friend and so I'm making sure that the recording is going correct but then I quickly jump into character and then my colleague here Eliza she's from She's representing acmeco she's a lead buyer at acmeco who I'm trying to sell software into
+
+um and you can see here that I include this is part of Step number one is we're going to have my name and then we're going to have the company name that I represent same thing with the person I'm talking to really helpful to help the language model understand who represents who uh whether your transcript all right
+
+next thing that we're going to do is we're going to split our documents again because this um transcript is too long and we don't want to run into prompts problems here so I'm going to set up the recursive character text splitter and I'm going to specify the separator that I wanted to look at first is going to be the double
+
+new line because that is how these different pieces of text are split up here and if they need it then you can go to the single new line I'm going to set a chunk size of 2000 and this may seem kind of big where you we're using the chat model so there's actually larger token limits and eventually we won't
+
+need to worry about this because the token limits will be so big that it won't be a big issue but either way I'm putting in the chunk overlap of 250 which means that our chunks will actually overlap by about 250 characters we'll go ahead and run that and then let's take a look at a preview it looks like I have five texts that came out of
+
+this one and here we have a single document and it's just the a repeat of what we saw beforehand except in document form all right so the next thing I'm going to do is make my llm and so in this case I'm going to use the oh it not doesn't have that let me make sure there we go I had a hidden cell for
+
+my API key for in this case I'm going to create the llm and it's going to be the chat model which is why we use chat open AI instead of regular open Ai and I'm going to set the temperature equals zero which means it won't be too creative and it won't be too liberal with its responses all right so let's go ahead and run that
+
+and the next thing we're going to do is we're just going to start with the vanilla load summarize chain so this is the one that comes right out of the box with Lane chain and if you actually wanted to see what prompts were being used in this chain you could go ahead and go to Lang chain chains Sunrise
+
+mapreduce prompt and see that this is what's being used okay so let me go ahead and make that chain awesome and at this point you might be saying well Greg what about the embeddings um we're only doing one call right here and this isn't a tutorial on embeddings I have other tutorials on that if you want to go check that out but for here
+
+I'm doing it out of Simplicity if you're doing multiple calls or really really long calls you may want to consider embeddings but that's not the purpose of this video all right let me go ahead and run that and then I'm going to run these uh this output and I did verbose equals true up here just so you can see what is
+
+happening uh if we scroll up to the very top here we get a prompt that says write a concise summary of the following and then we get our pieces of or our single document of the transcript that we had beforehand and then what will end up happening is the output will be a concise summary and then we're finally
+
+going to get a summary of the summaries because we're doing a map reduce now if you want to find out more information about different chain types I also have another video on that in the Lang chain playlist that you can go check out but let's let's let this output and we'll see what it does all right so we
+
+got our output from the model here Greg from Marine transition partner discusses with Eliza Acme Co about their business social media presence and the need for social monitoring tool it's not bad but the first thing that I noticed here is that it is representing a third party that or the AI models representing a
+
+third party that's kind of agnostic to what's going on in this um in this conversation here however if I'm making a tool that I want to be beneficial to sales users I want to instruct the AI hey you're on the side of Greg here and the sales person and you're going to be a helpful AI bot that's helping them and
+
+so that it takes a bit more of an opinionated and opinionated stance about how it represents its output here okay so the way I'm going to do that is I'm actually going to use custom prompts for this and the way I'm going to set that up is I'm going to first start with a template and I'm going to start with my
+
+map prompt first which is going to be the first step when we get the original summaries before we get the summaries of the summaries in our combined prompt so your helpful assistant that helps sales rep name and you'll notice that this is in a token right here and the reason why I do this is because I want to
+
+dynamically Place different people's names here now in this instance I'm only going to do Greg but for your use case you may want to insert other other values there so that helps Greg a sales rep at Marin transition partners uh summarize information from some uh sales call your goal is to write a summary from the perspective of Greg oh
+
+that is actually going to be a mistake this should be another template there of Greg uh what that will highlight key points that will be relevant to making a sale do not respond with anything outside the call transcript that was one of the key points I mentioned if you don't know say I don't know and then do
+
+not repeat Greg Greg's name in your output I found that it was kind of a little emphasizing on that too much and so I included that one there and then for the human template which is the human message because remember you need we want the system message and then the human message so we can get an output
+
+here I'm just going to pass the text that comes that comes from it and then with these I'm going to combine both of them into a single chat prompt template so we had templates for our individual messages but now we need to combine them into a chat prompt template we'll go ahead and run that and then I'm
+
+going to load up the summarize chain and let's go ahead and run this all right and then here's where the cool part happens when we start to input our values so for the input documents it's just going to be the texts which is what's going to get put in as a text um into into this text token right there
+
+and then for sales rep company this represents sales rep company up here and it's going to be Marine transition partner which is the value it's going to put in and then we're going to have sales rep name which is going to be Greg and it's going to go up there so let's go ahead and run this and see what the
+
+output is Acme code is software company that helps non-profits grow their businesses looking for social monitoring tool nice so this is a little bit better because it describes the company it describes what they're looking for which is a little bit of that sales flavor that we included in the in the prompt
+
+there so they estimate that could enable them close one more deal per month about fifty thousand says the stakeholders nice this is a lot more attuned to the sales use case which is nice using those custom prompts all right now say I wanted to have a different output though because this is helpful but what if a
+
+salesperson just wants a list of bullet points or or they just want one sentence or whatever it may be well I don't want them to have to insert a new prompt to get that output I want to have them be able to do a promptless change now I'll be writing the prompt but they won't be so the way I'm choosing to do this right now
+
+there's probably a bunch of methods but the one I like that makes the most sense to me is I'm going to define the different options that I want the user to be able to pick from one sentence bullet point short or long summary and then I'm going to define a dictionary in Python now what I'm going to do here is
+
+my key is going to be just the one of the options that we had up above and then the value is going to be a list of bullet points that signify how I want the output to be for one sentence I only want one sentence but for bullet points I want bullet point format separate each bullet point with a new line and then
+
+each bullet point should be concise so now when the user selects this option whether it be a radio button or a drop down or whatever it may be they can get these three bullet points without even needing to type them out so let me run this and so we can get our dictionary go ahead and do that and then for this
+
+template here we are going to do the same template that we had up above sales rep name sales rep company okay okay etc etc it looks good but now we're actually going to do our combined prompt so that means that when we have our list of summaries but now when we do the summary of the summaries we're going to specify
+
+the output that we need here so the addition I'm going to do is I'm going to add in this piece which is net new to the combined problem because we just used the default one beforehand and I'm going to say hey respond with the following format and then the output format right here is going to be the value that is selected by the user up
+
+above okay so let's go ahead and run this and we'll create our chain one more time chat is not that's because I need to switch this to llm from above and then the user selection here is going to be bullet points and this value up here represents the same value that is selected right there and I'm going to go ahead and run this
+
+but here we have texts that is selected we have Marin transition Partners we have Greg but then the output format which is going to be insert into the token up above is going to be our dictionary with the key that is selected of the user's selection up above let's go ahead and run that and see what we
+
+have and one of the key Parts I wanted to highlight here as well is this is where our combined prompt is going to be used and so here's the system message that we had before and but here now it's getting picked up with respond with the following format and it's selecting the bullet points that we had below now if
+
+we take a look at the output that's freaking cool because now we have oh now we have bullet point outputs here so Acme code is a software company that helps non-profits grow awesome and we get a bit more detailed information as well so if we wanted to do one sentence we could go up here and type in one
+
+sentence sentence all right and we just have one sentence here so Acme code is interested in a social monitoring tool et cetera et cetera the sentence is kind of long but you can go ahead and play with the prompt however you want to make that for your use case awesome well that is the main part about
+
+how to do uh parsing transcripts and make it a little bit easier on the user for you if you want to see more information about thimble please head over to thimbleai.com link is also in the description and I'm also really curious to see what kind of ideas you have or what types of conversations would you want to parse and so I'd love
+
+to see them and if you want to share them with me please do it over at Twitter or at email me at contact data independent.com we'll see you later
